@@ -1,11 +1,11 @@
 {
   "name": "web2025-4",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js --host localhost --port 3000 --input ./data.json"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,12 @@
   },
   "homepage": "https://github.com/stanko-dev/web2025-4#readme",
   "dependencies": {
-    "commander": "^13.1.0"
-  }
+    "commander": "^13.1.0",
+    "xml2js": "^0.6.2",
+    "xmlbuilder2": "^3.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "description": ""
 }
